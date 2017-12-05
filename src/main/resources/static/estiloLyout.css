@@ -1,0 +1,37 @@
+*div{
+	border: solid;	
+	
+}*/
+
+.este{
+	border: solid;
+	
+}
+p{
+	font-size: 20px;
+}
+body{
+	
+	background-image: url("/helado3.jpg");
+}
+label{
+	font-size: 20px;
+}
+
+h1{ 
+	text-align: center;
+	text-decoration: underline;
+	
+
+	
+	}
+div{
+	background-color: #c0c0c0;
+}
+.fondo {
+		background-color: #00ff00;
+	
+}
+span {
+	display: block
+}

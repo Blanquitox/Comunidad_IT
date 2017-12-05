@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="index">
+	
+
+	<main class="" id="main-collapse">
+
+
+	<div class="row" layout:fragment="contenido"> 
+		<div class="col-xs-12">
+			<div class="section-container-spacer">
+				<h1>Contactanos</h1>
+				<p>
+					Con la atencion que nos caracteriza, en esta seccion podras
+					realizar todas las consultas y/o pedidos que desees, con una pronta
+					respuesta.<br> Gracias a Ti estamos mejorando cada dia.</br>
+					<!-- esto te permite hacer un enter y seguir en el reglon de abajo (( <br></br> )) -->
+				</p>
+			</div>
+			<div class="section-container-spacer">
+				<p class="alert-danger" th:text="${mensajeError}"></p>
+				<form action="/recibirContacto" method="POST" class="reveal-content">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" name= "nombre" class="form-control" id="name"
+									placeholder="Nombre" th:value="${nombreAnterior}"></input>
+							</div>
+							<div class="form-group">
+								<input type="email" name= "email" class="form-control" id="email"
+									placeholder="Email" th:value="${emailAnterior}"></input>
+							</div>
+							<div class="form-group">
+								<input type="text" name= "tema" class="form-control" id="subject"
+									placeholder="Tema" th:value="${temaAnterior}"></input>
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" rows="3" name= "mensaje" id="mensaje"
+									placeholder="Ingresa tu mensaje" th:value="${mensajeAnterior}"></textarea>
+							</div>
+							<button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+						</div>
+						<div class="col-md-6">
+							<ul class="list-unstyled address-container">
+								<li><span class="fa-icon"> <i class="fa fa-phone"
+										aria-hidden="true"></i>
+								</span> + 54 11 30 29 37 53</li>
+								<li><span class="fa-icon"> <i class="fa fa-at"
+										aria-hidden="true"></i>
+								</span> Su_Ju@hotmail.com.ar</li>
+								<li><span class="fa-icon"> <i
+										class="fa fa fa-map-marker" aria-hidden="true"></i>
+								</span> 42 rue Moulbert 75016 Paris</li>
+							</ul>
+							<h3>Sigenos en nuestras redes sociales</h3>
+							<a href="https://www.linkedin.com/" title="" class="fa-icon">
+								<i class="fa fa-linkedin"></i>
+							</a> <a href="https://twitter.com/" title="" class="fa-icon"> <i
+								class="fa fa-twitter"></i></a> <a class="fa-icon"
+								href="https://www.instagram.com/" title=""> <i
+								class="fa fa-instagram"></i> <a class="fa-icon"
+								href="https://www.youtube.com/" title=""> <i
+									class="fa fa-youtube " aria-hidden="true"></i></a>
+							</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	</main>
+
+</html>

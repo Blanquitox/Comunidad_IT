@@ -1,0 +1,59 @@
+div1{
+	border: 1px solid #ffffff;
+}
+*{margin: 0px;}
+a{
+	color: #ffffff;
+}
+
+
+
+h2 {
+	color: #ff0080; 
+	text-align: center;
+	font-size: 10px; 
+	margin-top: 40px;
+}
+	//barra de navegacion
+
+li{
+	color: #ff0000;
+	font-size: 20px;
+	margin:25px;
+	text-align: center;
+}	
+
+.destacado{
+	color: #008080;	
+	font-weight: 200; 
+	font-size: 20px;
+}
+
+body{ 
+	font-family: "Arial";
+	background-color: none;
+	background-image:url("/fondo2.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+p {
+    font-family: verdana;
+    font-size: 35px;
+    text-align: center
+}
+#header {
+	background-color:none;
+}
+#nav{
+	background-position: left;
+}
+.img-carrusel{
+	 margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px
+}
+   
+}
+	
